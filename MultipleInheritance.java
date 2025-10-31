@@ -11,14 +11,19 @@ interface Cat extends Cat1, Cat2 {
 }
 
 class Sum implements Cat {
+    public void eat() {
+        System.out.println("Cat is eating...");
+    }
+
     public void sleep() {
-        System.out.println("value of x & y:" +  x  + " & "  + y);
+        System.out.println("value of x & y: " + x + " & " + y);
     }
 }
 
 public class MultipleInheritance {
     public static void main(String[] args) {
         Sum r = new Sum();
+        r.eat();
         r.sleep();
     }
 }
